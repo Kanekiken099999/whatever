@@ -83,7 +83,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm an anime-theme management bot [✨](https://telegra.ph/file/11b5922a33de9968cedfe.jpg)
+✪ I'm an anime-theme management bot [😈](https://telegra.ph/file/b01868d0bdf6879d9e596.mp4)
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
@@ -367,23 +367,7 @@ def emiko_about_callback(update, context):
             f"\n\n Click on button bellow to get basic help for {dispatcher.bot.first_name}.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                    InlineKeyboardButton(text="Admins", callback_data="emiko_admin"),
-                    InlineKeyboardButton(text="Notes", callback_data="emiko_notes"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Support", callback_data="emiko_support"),
-                    
-                 [
-                    InlineKeyboardButton(text="Source Code", url="https://github.com/kennedy-ex/EmikoRobot"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Go Back", callback_data="emiko_back"),
-                 ]
-                ]
-            ),
+            
         )
     elif query.data == "emiko_back":
         first_name = update.effective_user.first_name
@@ -792,7 +776,7 @@ def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
             dispatcher.bot.sendMessage(
-                f"@{SUPPORT_CHAT}", 
+                f"@naruto_robot_support", 
                 "👋 Hi, i'm alive.",
                 parse_mode=ParseMode.MARKDOWN
             )
