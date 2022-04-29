@@ -5,7 +5,7 @@ wget
 gtts
 beautifulsoup4
 requests
-python-telegram-bot==13.11.0
+python-telegram-bot
 SQLAlchemy==1.4.35
 psycopg2-binary
 feedparser
@@ -14,6 +14,7 @@ hachoir
 pykeyboard
 pynewtonmath
 aiofiles
+aiohttp
 ffmpeg-python
 spongemock
 zalgo-text
@@ -69,7 +70,6 @@ jikanpy
 tswift
 python-arq
 envparse
-#profanity (Credits to Julia)
 better_profanity
 textblob 
 nudepy
@@ -84,4 +84,4 @@ pendulum
 fuzzysearch
 img2pdf
 multicolorcaptcha
-git+https://github.com/python-telegram-bot/ptbcontrib.git
+ptbcontrib @ git+https://github.com/python-telegram-bot/ptbcontrib.git@907070d129b7cf80b0236d72fb498667b5b22b63
