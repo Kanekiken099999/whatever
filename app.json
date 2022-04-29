@@ -11,14 +11,6 @@
     
    "logo":    "https://telegra.ph/file/35e56ba7eace7332356ad.jpg",  
    "repository": "https://github.com/kennedy-ex/https://github.com/kennedy-ex/EmikoRobot",
-   "addons": [
-          {
-         "options": {
-            "version": "13"
-         },
-         "plan": "heroku-postgresql"
-      }
-   ],
    "buildpacks": [
     {
       "url": "https://github.com/heroku/heroku-buildpack-python"
@@ -37,6 +29,11 @@
          "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
          "required": true,
          "value": ""
+      },
+      "DATABASE_URL": {
+         "description": "Lwda lassan",
+         "required": true,
+         "value": "postgresql://postgres:xfchrVbwaL2TrFwJ2LL4@containers-us-west-37.railway.app:7372/railway"
       },
       "API_HASH": {
          "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
